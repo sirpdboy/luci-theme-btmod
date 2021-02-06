@@ -12,24 +12,40 @@ openwrt 1806 luci主题，具有PC和手机自适应的特性，界面简洁大�
 
 要是好用的话，请多分享给其他有需要的人吧。欢迎大家一起完善。
 
-
 ## 编译使用方法 [![](https://img.shields.io/badge/-编译使用方法-F5F5F5.svg)](#编译使用方法-)
-```Brach
-    # 下载源码
-    
-    git clone https://github.com/sirpdboy/luci-theme-btmod package/luci-theme-btmod
-    
-    make menuconfig
- ```   
- 
- # 编译选择
- 
-    make menuconfig，进入luci->themes，选择luci-theme-btmod，保存退出，make V=99编译。
 
-    # 编译
- ```Brach   
-     make package/luci-app-btmod/{clean,compile} V=s
+将luci-theme-btmod主题添加至 LEDE/OpenWRT 源码的方法。
+
+### 下载源码方法一：
+编辑源码文件夹根目录feeds.conf.default并加入如下内容:
+
+```Brach
+    # feeds获取源码：
+    src-git btmod  https://github.com/sirpdboy/luci-theme-btmod
+ ``` 
+  ```Brach
+   # 更新feeds，并安装主题：
+    scripts/feeds update btmob
+	scripts/feeds install luci-theme-btmob
  ``` 	
+
+### 下载源码方法二：
+ ```Brach
+    # 下载源码
+    git clone https://github.com/sirpdboy/luci-theme-btmob package/luci-theme-btmob
+    make menuconfig
+ ``` 
+### 配置菜单
+ ```Brach
+    make menuconfig
+	# 找到 LuCI -> Themes, 选择 luci-theme-btmob, 保存后退出。
+ ``` 
+### 编译
+ ```Brach 
+    # 编译固件
+    make package/luci-app-btmob/{clean,compile} V=s
+
+ ```Brach
 
 
 # My other project
@@ -37,7 +53,7 @@ NetSpeedTest ：https://github.com/sirpdboy/NetSpeedTest
 
 autopoweroff : https://github.com/sirpdboy/luci-app-autopoweroff
 
-opentopd theme : https://github.com/sirpdboy/luci-theme-opentopd
+btmob theme : https://github.com/sirpdboy/luci-theme-btmob
 
 btmob theme : https://github.com/sirpdboy/luci-theme-btmob
 
@@ -47,7 +63,6 @@ advanced : https://github.com/sirpdboy/luci-app-advanced
 ## 说明 [![](https://img.shields.io/badge/-说明-F5F5F5.svg)](#说明-)
 
 源码来源：https://github.com/sirpdboy/luci-theme-btmob
-
 
 
 ## 捐助 [![](https://img.shields.io/badge/-捐助-F5F5F5.svg)](#捐助-) 
