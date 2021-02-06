@@ -43,25 +43,30 @@ openwrt 1806 luci主题，具有PC和手机自适应的特性，界面简洁大�
 ### 编译
  ```Brach 
     # 编译固件
-    make package/luci-app-btmob/{clean,compile} V=s
+    make package/luci-theme-btmob/{clean,compile} V=s
  ```
-
- # My other project
-NetSpeedTest ：https://github.com/sirpdboy/NetSpeedTest
-
-autopoweroff : https://github.com/sirpdboy/luci-app-autopoweroff
-
-btmob theme : https://github.com/sirpdboy/luci-theme-btmob
-
-btmob theme : https://github.com/sirpdboy/luci-theme-btmob
-
-advanced : https://github.com/sirpdboy/luci-app-advanced
-
 
 ## 说明 [![](https://img.shields.io/badge/-说明-F5F5F5.svg)](#说明-)
 
 源码来源：https://github.com/sirpdboy/luci-theme-btmob
 
+你可以随意使用其中的源码，但请注明出处。
+============================
+
+# My other project
+网络速度测试 ：https://github.com/sirpdboy/NetSpeedTest
+
+定时关机重启 : https://github.com/sirpdboy/luci-app-autopoweroff
+
+关机功能插件 : https://github.com/sirpdboy/luci-app-poweroffdevice
+
+opentopd主题 : https://github.com/sirpdboy/luci-theme-opentopd
+
+opentoks 主题: https://github.com/sirpdboy/luci-theme-opentoks [仿KOOLSAHRE主题]
+
+btmob 主题: https://github.com/sirpdboy/luci-theme-btmob
+
+系统高级设置 : https://github.com/sirpdboy/luci-app-advanced
 
 ## 捐助 [![](https://img.shields.io/badge/-捐助-F5F5F5.svg)](#捐助-) 
 
@@ -82,3 +87,4 @@ advanced : https://github.com/sirpdboy/luci-app-advanced
 ###### [解决 Github 网页上图片显示失败的问题](https://blog.csdn.net/qq_38232598/article/details/91346392)
 
 [![](https://img.shields.io/badge/TG群-点击加入-FFFFFF.svg)](https://t.me/joinchat/AAAAAEpRF88NfOK5vBXGBQ)
+
