@@ -44,11 +44,9 @@ openwrt 1806 luci主题，具有PC和手机自适应的特性，界面简洁大�
  ```Brach 
     # 编译固件
     make package/luci-app-btmob/{clean,compile} V=s
+ ```
 
- ```Brach
-
-
-# My other project
+ # My other project
 NetSpeedTest ：https://github.com/sirpdboy/NetSpeedTest
 
 autopoweroff : https://github.com/sirpdboy/luci-app-autopoweroff
